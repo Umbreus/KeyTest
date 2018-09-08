@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <script src="index.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+    
+    
+<body onload="initialise();">
+<div class="flex-row-layout">
+    <div id="Header">
+        <header>Input Tester</header>
+        <div class="t-center">The purpose of this page is to test mouse and keyboard functionality</div>
+    </div>
+    <div class="flex-column-layout">
+        <div class="flex-row-layout">
+        <table id="Data" class="flex-side thin-border">
+            <tr>
+                <th>Mouse Button</th>
+                <td id="mouse-button">---</td>
+            </tr>
+            <tr>
+                <th>Scroll Direction (Y)</th>
+                <td id="scroll-direction">---</td>
+            </tr>
+            <tr>
+                <th>Scroll Intensity (Y)</th>
+                <td id="scroll-intensity">---</td>
+            </tr>
+            <tr>
+                <th>Keyboard Buttons</th>
+                <td id="keypress">---</td>
+            </tr>
+        </table>
+        <table class="flex-side thin-border">
+            <tr>
+                <th colspan=2>Controls</th>
+            </tr>
+            <tr>
+            <th rowspan=2>Start:</th>
+                <td>
+                    <input type="number" id="range" value=0>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Absolute: <input type="checkbox" id="range-abs" checked>
+                </td>
+            </tr>
+            <th>Fix Y-axis:</th>
+                <td>
+                    <input type="checkbox" id="x-fixed">
+                </td>
+        </table>
+        
+        </div>
+        
+        <canvas id="Canvas-Mouse" class="flex-expand thin-border">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        
+    </div>
+</div>
+
+</body>
+</html>
