@@ -52,7 +52,16 @@ function handleResize(e) {
  */
 function handleKeyboard(e){
     'use strict';
-    document.getElementById("keypress").innerHTML = e.key;
+    let key;
+
+    // Handle space not being visible to the user
+    if (e.key === ' '){
+        key = "Space";
+    } else {
+        key = e.key;
+    }
+
+    document.getElementById("keypress").innerHTML = key;
 }
 
 /**
